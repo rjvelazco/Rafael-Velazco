@@ -30,16 +30,40 @@ header{
     background-repeat: no-repeat;
     max-height: 600px;
     background-position: center;
+    overflow: hidden;
 }
 
+header .redes{
+    margin: 40px 0px;
+    text-align:right;   
+}
 header .menu{
     margin: 40px 0px;
     text-align:right;
 }
 
-header .menu a{
-    margin:0px 20px;
+header .contenedor{
+    overflow: hidden;
+    max-height: 800px;
+}
+
+header .menu-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+header  .menu-flex .redes a{
+    display:inline-block;
+    margin:0px 10px;
     color: #ffffff;
+    padding-bottom:9px;
+    display:inline-block;
+    text-decoration: none;
+}
+
+header  .menu-flex .menu a{
+    margin:0px 20px;
+    color: #ffff;
     padding-bottom:9px;
     display:inline-block;
     text-decoration: none;
@@ -47,7 +71,7 @@ header .menu a{
     font-size:1em;
 }
 
-header .menu a:hover{
+header  .menu-flex .menu a:hover{
     border-bottom:2px solid #fff;
 }
 
@@ -328,9 +352,15 @@ footer .redes-sociales .youtube:hover{background:#cd201f;}
 /*------------------------MEDIA QUIERIES----------------------------*/
 
 @media screen and (max-width: 800px){
+    header .menu-flex{
+        flex-direction: column;
+    }
+    header .redes{
+        text-align: center;
+        margin-bottom: 0px;
+    }
     header .menu{
         text-align: center;
-
     }
     .main .trabajos .contenedor-trabajos .trabajo{
         width: 45%;
@@ -342,11 +372,15 @@ footer .redes-sociales .youtube:hover{background:#cd201f;}
 }
 
 @media screen and (max-width: 500px){
+
     header .contenedor-texto .texto .nombre{
-        font-size: 35px;
+        font-size: 25px;
     }
     header .contenedor-texto .texto .profesion{
-        font-size: 18;
+        font-size: 15px;
+    }
+    header .contenedor-texto{
+        margin-top: 80px;
     }
     header .menu{
         text-align: center;
@@ -359,5 +393,14 @@ footer .redes-sociales .youtube:hover{background:#cd201f;}
     footer .redes-sociales .contenedor{
         flex-wrap: wrap;
         padding:20px 0px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    header .contenedor-texto .texto .nombre{
+        font-size: 20px;
+    }
+    header .contenedor-texto .texto .profesion{
+        font-size: 12px;
     }
 }
