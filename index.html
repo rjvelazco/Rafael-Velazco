@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/CSS/normalize.css">
+    <!-- <link rel="stylesheet" href="./assets/CSS/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./assets/CSS/estilos.css">
+    <link rel="stylesheet" href="./assets/CSS/popup.css">
+    <title>Portafolios Rafael</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-img-menu">
+            <div class="contenedor">
+                <nav class="menu">
+                    <a href="#acerca-de">Acerca de</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#skills">Habilidades</a>
+                </nav>
+                <div class="contenedor-texto">
+                    <div class="texto">
+                        <h1 class="nombre">Rafael Velazco</h1>
+                        <h2 ><span class="profesion typed"><i>MEAN Stack Developer</i></span></h2>
+                        <div class="contenedor-profesiones"id="profesiones">
+                            <!-- Fontend Developer - Angular -->
+                            <h2 ><span><i>MEAN Stack Developer</i></span></h2>
+                            <h2 ><span><i>Fontend Developer - Angular</i></span></h2>
+                            <h2 ><span><i>Programador Geek</i></span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+            </div>
+    </header>
+    
+    <section class="main">
+        <section class="acerca-de" id="acerca-de">
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="./assets/img/me.jpeg" width="115px" alt="Rafeal Velazco"  title="Rafael Velazco" >
+                </div>
+    
+                <div class="texto">
+                    <h3 class="titulo">Acerca de mí</h3>
+                    <p>Soy un estudiante de ingeniería en informática especializado en el desarrollo 
+                        de software empleando tecnologías basa en JavaScript, 
+                        empleando Angular como framework frontend y NodeJs como entorno de desarrollo backend. Soy un <span class="bold">MEAN Stack Developer JR</span> apasionado de la programación he estado estudiando programación por más de un año, y es un mundo que me sigue enamorando cada día.</p>
+
+                    <p>Me desenvuelvo muy bien con el trabajo en equipo, me adapato a cualquier entorno de trabajo. Soy realmente proactivo, creativo y curioso. Me encanta aportar nuevas ideas y mantener un comunición ¡Espero podamos trabajar juntos!</p>
+                </div>
+            </div>
+        </section>
+        <section class="trabajos" id="proyectos">
+            <div class="contenedor">
+                <h3 class="titulo">Proyectos - Trabajos</h3>
+                <!-- https://adminpro-backend-adv.herokuapp.com/ -->
+                <div class="contenedor-trabajos">
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="./assets/img/proyectos/adminPro-CRUD.png" alt="Hospitales App">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Hopitales - Administrador</p>
+                            <p class="categoria">Angular - NodeJS - Mongose</p>
+                            <button class="btn-mas btn-abrir-popup" data-pyt="0">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="./assets/img/proyectos/fotos-firebase.png" alt="Firebase - Uploads" width="500">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Firebase - Fotos</p>
+                            <p class="categoria">Angular - Firebase - Drag & Drop</p>
+                            <button class="btn-mas btn-abrir-popup" data-pyt="1">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="./assets/img/proyectos/peliculas.png" alt="Peliculas" width="500">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Peliculas</p>
+                            <p class="categoria">Angular - HTTPClient - IMDB Api</p>
+                            <button class="btn-mas btn-abrir-popup" data-pyt="2">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="./assets/img/proyectos/mapa.png" alt="Mapas - Material" width="500">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Mapas</p>
+                            <p class="categoria">Angular - Aunglar Material - Google Api</p>
+                            <button class="btn-mas btn-abrir-popup" data-pyt="3">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="./assets/img/proyectos/colas.png" alt="Colas NodeJS" width="500">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Turnos - Tickets</p>
+                            <p class="categoria">NodeJS - Express - Sockets</p>
+                            <button class="btn-mas btn-abrir-popup" data-pyt="4">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="./assets/img/proyectos/6.JPG" alt="Escritorio" width="500">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Title</p>
+                            <p class="categoria">HTML - CSS</p>
+                            <button class="btn-mas btn-abrir-popup" data-pyt="5">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <section class="contacto" id="skills">
+            <div class="contenedor">
+                <h3 class="titulo">Contact</h3>
+                <form class="formulario">
+                    <input type="text" placeholder="Name" name="nombre" required>
+                    <input type="email" placeholder="Email" name="correo" required>
+                    <textarea name="mensaje" placeholder="Message"></textarea>
+                    <input class="boton" type="submit" value="Send">
+                </form>
+            </div>
+        </section>
+        <section class="redes-sociales">
+            <div class="contenedor">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/rafaeljesus.velazconavarro" class="facebook"><i class="fa fa-facebook-f"></i></a>
+                <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+                <a href="https://github.com/rjvelazco" class="github"><i class="fa fa-github"></i></a> <!--Github-->
+                <a href="https://www.linkedin.com/in/rafael-velazco/" class="instagram"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
+    </footer>
+
+
+    <div class="overlay" id="overlay">
+
+        <div class="popup">
+            <!-- this.father.hidden -->
+            <div class="btn-cerrar-cont">
+                <a class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="img-container">
+                <img class="img-popup" src="./assets/img/proyectos/adminPro.png" alt="">
+                <h2>Proyecto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt consectetur voluptates et consequuntur. Culpa hic eius ab beatae, necessitatibus numquam esse aspernatur quam quisquam consectetur sed dolorum autem cupiditate molestiae, asperiores unde nobis? In, hic, veritatis maxime dignissimos eligendi accusantium quidem qui voluptate quo ducimus facere. Vitae, eius nulla!</p>
+            </div>
+            <div class="liks-proyecto">
+                <a href="https://github.com/rjvelazco" class="btn-proyecto">Ver el Código</a> <!--Github-->
+                <a href="https://www.linkedin.com/in/rafael-velazco/" class="btn-proyecto success">Ver la Web</a>
+            </div>
+        </div>
+
+        <div class="popup">
+            <!-- this.father.hidden -->
+            <div class="btn-cerrar-cont">
+                <a class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="img-container">
+                <img class="img-popup" src="./assets/img/proyectos/fotos-firebase.png" alt="">
+                <h2>Proyecto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt consectetur voluptates et consequuntur. Culpa hic eius ab beatae, necessitatibus numquam esse aspernatur quam quisquam consectetur sed dolorum autem cupiditate molestiae, asperiores unde nobis? In, hic, veritatis maxime dignissimos eligendi accusantium quidem qui voluptate quo ducimus facere. Vitae, eius nulla!</p>
+            </div>
+            <div class="liks-proyecto">
+                <a href="https://github.com/rjvelazco" class="btn-proyecto">Ver el Código</a> <!--Github-->
+                <a href="https://www.linkedin.com/in/rafael-velazco/" class="btn-proyecto success">Ver la Web</a>
+            </div>
+        </div>
+
+        <div class="popup">
+            <!-- this.father.hidden -->
+            <div class="btn-cerrar-cont">
+                <a class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="img-container">
+                <img class="img-popup" src="./assets/img/proyectos/peliculas.png" alt="">
+                <h2>Proyecto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt consectetur voluptates et consequuntur. Culpa hic eius ab beatae, necessitatibus numquam esse aspernatur quam quisquam consectetur sed dolorum autem cupiditate molestiae, asperiores unde nobis? In, hic, veritatis maxime dignissimos eligendi accusantium quidem qui voluptate quo ducimus facere. Vitae, eius nulla!</p>
+            </div>
+            <div class="liks-proyecto">
+                <a href="https://github.com/rjvelazco" class="btn-proyecto">Ver el Código</a> <!--Github-->
+                <a href="https://www.linkedin.com/in/rafael-velazco/" class="btn-proyecto success">Ver la Web</a>
+            </div>
+        </div>
+
+        <div class="popup">
+            <!-- this.father.hidden -->
+            <div class="btn-cerrar-cont">
+                <a class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="img-container">
+                <img class="img-popup" src="./assets/img/proyectos/mapa.png" alt="">
+                <h2>Proyecto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt consectetur voluptates et consequuntur. Culpa hic eius ab beatae, necessitatibus numquam esse aspernatur quam quisquam consectetur sed dolorum autem cupiditate molestiae, asperiores unde nobis? In, hic, veritatis maxime dignissimos eligendi accusantium quidem qui voluptate quo ducimus facere. Vitae, eius nulla!</p>
+            </div>
+            <div class="liks-proyecto">
+                <a href="https://github.com/rjvelazco" class="btn-proyecto">Ver el Código</a> <!--Github-->
+                <a href="https://www.linkedin.com/in/rafael-velazco/" class="btn-proyecto success">Ver la Web</a>
+            </div>
+        </div>
+
+        <div class="popup">
+            <!-- this.father.hidden -->
+            <div class="btn-cerrar-cont">
+                <a class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="img-container">
+                <img class="img-popup" src="./assets/img/proyectos/colas.png" alt="">
+                <h2>Proyecto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt consectetur voluptates et consequuntur. Culpa hic eius ab beatae, necessitatibus numquam esse aspernatur quam quisquam consectetur sed dolorum autem cupiditate molestiae, asperiores unde nobis? In, hic, veritatis maxime dignissimos eligendi accusantium quidem qui voluptate quo ducimus facere. Vitae, eius nulla!</p>
+            </div>
+            <div class="liks-proyecto">
+                <a href="https://github.com/rjvelazco" class="btn-proyecto">Ver el Código</a> <!--Github-->
+                <a href="https://www.linkedin.com/in/rafael-velazco/" class="btn-proyecto success">Ver la Web</a>
+            </div>
+        </div>
+        
+        <div class="popup">
+            <!-- this.father.hidden -->
+            <div class="btn-cerrar-cont">
+                <a class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="img-container">
+                <img class="img-popup" src="./assets/img/proyectos/fotos-firebase.png" alt="">
+                <h2>Proyecto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt consectetur voluptates et consequuntur. Culpa hic eius ab beatae, necessitatibus numquam esse aspernatur quam quisquam consectetur sed dolorum autem cupiditate molestiae, asperiores unde nobis? In, hic, veritatis maxime dignissimos eligendi accusantium quidem qui voluptate quo ducimus facere. Vitae, eius nulla!</p>
+            </div>
+            <div class="liks-proyecto">
+                <a href="https://github.com/rjvelazco" class="btn-proyecto">Ver el Código</a> <!--Github-->
+                <a href="https://www.linkedin.com/in/rafael-velazco/" class="btn-proyecto success">Ver la Web</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/e896e08ad9.js" crossorigin="anonymous"></script>
+</body>
+</html>
