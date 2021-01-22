@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 *{
     box-sizing: border-box;
@@ -21,6 +22,22 @@ body{
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
+}
+
+.bg-js{
+    background-color: #f7df1e;
+}
+.bg-angular{
+    background-color: #b52e31;
+}
+.bg-sass{
+    background-color: #bf4080;
+}
+.bg-typeScript{
+    background-color: #3178c6;
+}
+.bg-adobe{
+    background-color: #ed174f;
 }
 
 /*------- HEADER -------*/
@@ -98,6 +115,7 @@ header .contenedor-texto .texto h2{
 }
 
 header .contenedor-texto .texto .nombre{
+    font-family: 'Kaushan Script';
     margin-bottom: 16px;
     font-size:50px;
     line-height:50px;
@@ -184,11 +202,12 @@ header .contenedor-img-menu::after{
 }
 .main .trabajos .contenedor .titulo{
 
+    font-family: 'Kaushan Script', "Open Sans", sans-serif;
     font-size:34px;
     line-height:34px;
     margin-bottom:40px;
     font-weight: 600;
-    color: #323068;
+    color: #3178c6;
     text-align:center;
 
 }
@@ -229,7 +248,7 @@ header .contenedor-img-menu::after{
 }
 
 .main .trabajos .contenedor-trabajos .trabajo .descripcion .btn-mas{
-    background: #3895ea;
+    background: #333;
     cursor:pointer;
     border:none;
     width: 100%;
@@ -248,11 +267,12 @@ header .contenedor-img-menu::after{
 /*-------FOOTER------*/
 
 
-footer .contacto{
+footer .habilidades{
     padding:60px 0;
 }
 
-footer .contacto .titulo{
+footer .habilidades .titulo{
+    font-family: 'Kaushan Script', "Open Sans", sans-serif;
     font-size:34px;
     line-height:34px;
     margin-bottom:40px;
@@ -260,13 +280,27 @@ footer .contacto .titulo{
     color: #DD820D;
     text-align:center;
 }
-footer .contacto .formulario{
+footer .habilidades .contenedor-habilidades{
     display:flex;
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
     justify-content: space-between;
 }
 
-footer .contacto .formulario input[type="text"],
+footer .habilidades .contenedor-habilidades .habilidades-seccion{
+    width: 45%;
+}
+
+footer .habilidades .contenedor-habilidades .habilidades-seccion .habilidad{
+    margin-bottom: 30px;
+}
+
+footer .habilidades .contenedor-habilidades .habilidades-seccion .habilidad h4{
+    font-size: 20px;
+    font-style: italic;
+    font-weight:bold;
+}
+
+/* footer .contacto .formulario input[type="text"],
 footer .contacto .formulario input[type="email"],
 footer .contacto .formulario textarea{
     border: 2px solid #cecece;
@@ -274,7 +308,7 @@ footer .contacto .formulario textarea{
     padding: 15px 20px;
     font-size: 20px;
     color:#a4a4a4;
-    /* outline:none; */
+    outline:none;
 }
 footer .contacto .formulario input[type="text"],
 footer .contacto .formulario input[type="email"]{
@@ -295,7 +329,7 @@ footer .contacto .formulario .boton{
     margin: 0 auto;
     color:#fff;
     background: #DD820D;
-    border:none; /*Nota mental, si vamos a colocar un borde tenemos que colocar "1px", puede ser cualquier numero pero no debemos olvidar la unidad */
+    border:none;
     border-radius:3px;
     padding: 15px 40px;
     cursor: pointer;
@@ -314,7 +348,7 @@ footer .contacto .formulario input[type="email"]:focus,
 footer .contacto .formulario textarea:focus{
     outline: none;
     border: 2px solid rgba(221, 130, 13, 0.9);
-}
+} */
 
 /*----REDES SOCIALES------*/
 
@@ -365,6 +399,15 @@ footer .redes-sociales .youtube:hover{background:#cd201f;}
     .main .trabajos .contenedor-trabajos .trabajo{
         width: 45%;
         margin-bottom:40px;
+    }
+    footer .habilidades .contenedor-habilidades{
+        /* display:flex; */
+        flex-wrap:wrap;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    footer .habilidades .contenedor-habilidades .habilidades-seccion{
+        width: 100%;
     }
     footer .redes-sociales .contenedor{
         flex-wrap: wrap;

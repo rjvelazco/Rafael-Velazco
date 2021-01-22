@@ -22,14 +22,20 @@
     border-radius: 3px;
     font-family: "Open Sans";
     padding: 20px;
+    padding-bottom: 0px;
     text-align: center;
-    width: 600px;
+    width: 700px;
+    height: 97%;
+    max-height: 600px;
     overflow: auto;
     overflow-y: auto;
-    display:none;
-    transform: scale(0.7);
     transition: 1 ease all;
     opacity: 0;
+    display:none;
+}
+
+.pop-text{
+    text-align: left;
 }
 
 .popup .btn-cerrar-cont{
@@ -61,13 +67,13 @@
     text-decoration: none;
     padding: 10px 20px;
     margin-bottom: 10px;
-    background:#3895ea;
+    background:#333;
     border-radius: 5px;
     color: #fff;
 }
 
 .popup .liks-proyecto .success{
-    background:#4BB543;
+    background:#4078c0;
 }
 
 .popup .btn-cerrar-popup:hover{
@@ -83,8 +89,12 @@
 
 .popup.active {
     display: inline-block;
-    transform: scale(1);
+}
+
+.active{
     opacity: 1;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
 }
 
 @media screen and (max-width: 480px){
